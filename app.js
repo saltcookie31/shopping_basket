@@ -10,7 +10,7 @@ data.forEach((item) => {
   document.querySelector("#products").appendChild(container);
 });
 
-const $cart = document.querySelector("#shopping_cart");
+const $kart = document.querySelector("#shopping_kart");
 const $$cards = document.querySelectorAll(".card");
 for (let card of $$cards) {
   let cardClone = card.cloneNode(true);
@@ -18,7 +18,7 @@ for (let card of $$cards) {
   cardClone.style.height = "8vw";
 
   card.addEventListener("click", function () {
-    $cart.appendChild(cardClone);
+    $kart.appendChild(cardClone);
     card.style.display = "none";
     cardClone.style.display = "";
   });
