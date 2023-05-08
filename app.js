@@ -16,9 +16,10 @@ for (let card of $$cards) {
   let cardClone = card.cloneNode(true);
   cardClone.style.width = "8vw";
   cardClone.style.height = "8vw";
+  $kart.appendChild(cardClone);
+  cardClone.style.display = "none";
 
   card.addEventListener("click", function () {
-    $kart.appendChild(cardClone);
     card.style.display = "none";
     cardClone.style.display = "";
   });
